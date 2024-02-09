@@ -81,6 +81,7 @@ public class FakeStoreProductClient {
         String productRequestBaseUrl=productBaseURL+productPath;
         RestTemplate restTemplate=restTemplateBuilder.build();
         // ResponseEntity<FakeStorePostDTOs[]> response=restTemplate.getForEntity(productRequestBaseUrl,FakeStorePostDTOs[].class);
+        //Closure example
         ResponseEntity<FakeStorePostDTOs[]> response=restTemplate.getForEntity(productRequestBaseUrl,FakeStorePostDTOs[].class);
                return Arrays.asList(response.getBody());
     }

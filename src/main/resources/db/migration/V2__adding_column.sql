@@ -1,0 +1,1 @@
+alter table Products add column quantity int null;

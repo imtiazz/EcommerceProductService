@@ -2,17 +2,20 @@ package com.myEcommerce.product.services;
 
 import com.myEcommerce.product.CustomException.NoSuchElementFoundException;
 import com.myEcommerce.product.dtos.GenericproductDTOs;
+import com.myEcommerce.product.dtos.ProductDTO;
+import com.myEcommerce.product.models.Products;
 import org.springframework.context.annotation.Bean;
 
 import java.util.List;
+import java.util.UUID;
 
 public interface ProductService {
 
-GenericproductDTOs createProduct(GenericproductDTOs product);
-GenericproductDTOs getProductById(Long id) throws NoSuchElementFoundException;
-GenericproductDTOs updateProduct(Long id,GenericproductDTOs product);
-GenericproductDTOs deleteProduct(Long id);
+Products createProduct(ProductDTO product) throws NoSuchElementFoundException;
+Products getProductById(UUID id) throws NoSuchElementFoundException;
+Products updateProduct(String id,ProductDTO productDTO) throws NoSuchElementFoundException;
+void deleteProduct(String id) throws NoSuchElementFoundException;
 
-List<GenericproductDTOs> getAllProduct();
+List<Products> getAllProduct();
     
 }
