@@ -2,6 +2,9 @@
 
 This repository contains the source code for an eCommerce product service application. The application serves as a backend system responsible for managing products, categories, inventory, and related functionalities for an eCommerce platform.
 
+Github link for outh service:
+https://github.com/imtiazz/Oauth2UserServiceAuthenticationServer
+
 ## Features
 
 - **Product Management**: CRUD operations for adding, updating, retrieving, and deleting products.
